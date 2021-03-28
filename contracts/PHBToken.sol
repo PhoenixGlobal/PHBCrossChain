@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: UNLICENSED
 pragma solidity 0.6.8;
 
 interface iBEP20 {
@@ -352,7 +353,7 @@ contract BEP20Mintable is Context, iBEP20, Ownable {
     _name = 'Red Pulse Phoenix Binance';
     _symbol = 'PHB';
     _decimals = 18;
-    _totalSupply = 1*10**9 * 10**18; //1000m
+    _totalSupply = 3374307751045319600000000000; //100m
     _balances[msg.sender] = _totalSupply;
 
     emit Transfer(address(0), msg.sender, _totalSupply);
